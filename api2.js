@@ -1,9 +1,10 @@
-const investInBajajFinserv = async (accountNumber, currentPrice) => {
+const investInBajajFinserv = async (accountNumber, currentPrice, githubRepoLink) => {
   try {
     const response = await axios.post('https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks', {
       company: 'Bajaj Finserv',
-      currentPrice:1578.15,
+      currentPrice: 1578.15,
       accountNumber:"BFHL0018655",
+      githubRepoLink:""
     }, {
       headers: {
         'content-type': 'application/json',
