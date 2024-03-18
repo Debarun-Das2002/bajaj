@@ -28,7 +28,7 @@ async function buyStocks(accountNumber, githubRepoLink) {
       company: 'Bajaj Finserv',
       currentPrice: 1500,
       accountNumber: "BFHL0018655",
-      githubRepoLink:"https://github.com/Debarun-Das2002/bajaj"
+      githubRepoLink:'https://github.com/Debarun-Das2002/bajaj'
     }, {
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ async function buyStocks(accountNumber, githubRepoLink) {
 async function main() {
   const account = await createAccount();
   const accountNumber = account.accountNumber;
-  const githubRepoLink = 'https://github.com/your_username/your_repo';
+  const githubRepoLink = 'https://github.com/Debarun-Das2002/bajaj';
 
   buyStocks(accountNumber, githubRepoLink);
 }
