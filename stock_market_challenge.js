@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-// Create Investment Account
 async function createAccount() {
   try {
     const response = await axios.post('https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/createAccount', {
@@ -21,7 +20,6 @@ async function createAccount() {
   }
 }
 
-// Buy Stocks
 async function buyStocks(accountNumber, githubRepoLink) {
   try {
     const response = await axios.post('https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks', {
